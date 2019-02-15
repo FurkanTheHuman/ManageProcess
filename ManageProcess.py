@@ -15,10 +15,8 @@ class ManageProcess():
 		try:
 			time.sleep(wait_for_termination)
 			if self.process.poll() is None:
-				state = "Running"
 				return True
 			elif self.process.poll() is 0:
-				state = "Completed Succesfuly"
 				return False
 			
 		except AttributeError:
