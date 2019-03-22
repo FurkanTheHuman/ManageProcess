@@ -43,7 +43,7 @@ class ManageProcess():
 		self.process.terminate()
 		
 		returncode = self.process.wait()
-		print "Terminated. Return value: %s" %returncode
+		print ("Terminated. Return value: {}".format(returncode))
 		return returncode
 	#important note use Popen pid to see pid
 
